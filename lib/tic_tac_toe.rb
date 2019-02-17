@@ -92,9 +92,9 @@ def winner
   combo = won?
     if !won?
       return nil
-     elsif combo[0] == "X"
+     elsif @board[combo[0]] == "X"
         return "X"
-     elsif combo[0] == "O"
+     elsif @board[combo[0]] == "O"
         return "O"
     end
   end
